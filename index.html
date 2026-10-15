@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaca Palet | TURPAL Palet, ISPM 15 Isıl İşlem, Özel Palet İmalatı - Şiran, Gümüşhane</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+    
+    h2 { color: #198754; } /* Başlıkları yeşil yapar */
+    .btn-success { background-color: #198754; border: none; } /* Buton rengini sabitler */
+    .navbar { box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+    .hero-section {
+        /* Arka plana resim ekleme satırı aşağıdadır */
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('arkapaln.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white; /* Yazılar resmin üstünde beyaz görünsün diye */
+        padding: 100px 0;
+        text-align: center;
+    }
+    .feature-card {
+        transition: transform 0.3s;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    html { scroll-behavior: smooth; }
+    #kurumsal, #iletisim { scroll-margin-top: 70px; }
+
+    .section-alt { background-color: #f1f7f3; }
+    .section-title { color: #198754; position: relative; display: inline-block; padding-bottom: 14px; }
+    .section-title::after {
+        content: "";
+        position: absolute; left: 50%; bottom: 0;
+        width: 60px; height: 4px; border-radius: 2px;
+        background: #198754; transform: translateX(-50%);
+    }
+
+    .info-tile {
+        background: #fff; border-radius: 12px; padding: 22px 12px;
+        text-align: center; height: 100%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        border-bottom: 3px solid #198754;
+    }
+    .info-tile i { display: block; font-size: 2rem; color: #198754; margin-bottom: 8px; }
+    .info-tile span { font-weight: 600; color: #212529; font-size: 0.95rem; }
+
+    .contact-card {
+        background: #fff; border-radius: 16px; overflow: hidden;
+        border: 1px solid #e3ece6;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    }
+    .contact-item { display: flex; align-items: center; gap: 16px; }
+    .contact-item a { word-break: break-all; }
+    .icon-circle {
+        width: 48px; height: 48px; flex: 0 0 48px; border-radius: 50%;
+        background: #e3f1e8; color: #198754;
+        display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+    }
+    .social-btn {
+        width: 42px; height: 42px; border-radius: 50%;
+        display: inline-flex; align-items: center; justify-content: center;
+        background: #198754; color: #fff; font-size: 1.2rem; text-decoration: none;
+        transition: background 0.2s, transform 0.2s;
+    }
+    .social-btn:hover { background: #146c43; color: #fff; transform: translateY(-3px); }
+
+    .site-footer { background: #0f3d2a; color: #cfe3d8; }
+    .site-footer a { color: #cfe3d8; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; color: #a9c7b8; }
+
+    .feature-card img { cursor: zoom-in; }
+    </style>
+</head>
+<body>
+
+    <<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #198754; position: sticky; top: 0; z-index: 1000;">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">KARACA KERESTE PALET</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item"><a class="nav-link" href="#">Ana Sayfa</a></li>
+    <li class="nav-item"><a class="nav-link" href="#kurumsal">Hakkımızda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#hizmetler">Ürünler</a></li>
+    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+</ul>
+        </div>
+    </div>
+</nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Karaca Palet'e Hoş Geldiniz</h1>
+            <p class="lead text-white fw-medium" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); </p>">TURPAL palet, ISPM 15 ısıl işlem ve özel ölçülü palet imalatı. Şiran, Gümüşhane.</p>
+            <a href="#hizmetler" class="btn btn-success btn-lg px-5 fw-bold">Daha Fazla Bilgi</a>
+        </div>
+    </header>
+
+    <section id="hizmetler" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card h-100 feature-card shadow-sm text-center p-3">
+                  <img src="palet.jpg" alt="TURPAL ahşap palet, üstten görünüm" class="img-fluid rounded mb-3 zoomable" style="height: 240px; object-fit: cover;" loading="lazy">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: #198754;">TURPAL Palet</h5>
+                      <p class="card-text text-muted">
+                       Türkiye standartlarına uygun, 80x120 cm ölçülerinde yüksek dayanıklılık sağlayan lisanslı TURPAL paletlerin satışı ve tedariği.
+                      </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 feature-card shadow-sm text-center p-3">
+                <img src="turpal.jpg" alt="ISPM 15 damgalı TURPAL palet" class="img-fluid rounded mb-3 zoomable" style="height: 240px; object-fit: cover; object-position: top;" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" style="color: #198754;">ISIL İŞLEM (ISPM 15)</h5>
+                    <p class="card-text text-muted">
+                    Uluslararası ihracat standartlarına uygun, zararlı organizmalardan arındırılmış ve ISPM 15 damgalı güvenilir palet çözümleri.
+                    </p>
+                </div>
+            </div>
+        </div>
+                
+<div class="col-md-4">
+    <div class="card h-100 feature-card shadow-sm text-center p-3">
+        <img src="ozelolcum.jpg" alt="Özel ölçülü ahşap paletler" class="img-fluid rounded mb-3 zoomable" style="height: 240px; object-fit: cover;" loading="lazy">
+        <div class="card-body">
+            <h5 class="card-title fw-bold" style="color: #198754;">ÖZEL PALET İMALATI</h5>
+            <p class="card-text text-muted">
+                Standart dışı ürünleriniz için istediğiniz ölçü ve özelliklerde, işletmenize özel dayanıklı ahşap palet ve ambalaj üretimi.
+            </p>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+<section id="kurumsal" class="py-5 section-alt">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">Hakkımızda</h2>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7">
+                <p class="lead text-dark">
+                    <strong>Karaca Palet</strong>, ambalaj ve lojistik sektöründe uzman kadrosuyla yüksek kalite standartlarında palet çözümleri sunmaktadır. 
+                </p>
+                <p class="text-muted mb-0">
+                    Sektördeki tecrübemizle, özellikle <strong>Turpal palet</strong> tedariği ve uluslararası ihracat standartlarına uygun <strong>Isıl İşlem (ISPM 15)</strong> uygulamalarında profesyonel hizmet veriyoruz. Müşterilerimizin operasyonel ihtiyaçlarına yönelik <strong>özel ölçülü palet imalatımızla</strong>, her türlü sevkiyat sürecine özel ve dayanıklı çözümler üretiyoruz. Kaliteli malzeme ve zamanında teslimat prensibimizle, iş ortaklarımızın lojistik süreçlerini güçlendiriyoruz.
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <div class="row g-3">
+                    <div class="col-6"><div class="info-tile"><i class="bi bi-patch-check-fill"></i><span>Lisanslı TURPAL palet</span></div></div>
+                    <div class="col-6"><div class="info-tile"><i class="bi bi-thermometer-sun"></i><span>ISPM 15 ısıl işlem</span></div></div>
+                    <div class="col-6"><div class="info-tile"><i class="bi bi-rulers"></i><span>Özel ölçülü imalat</span></div></div>
+                    <div class="col-6"><div class="info-tile"><i class="bi bi-truck"></i><span>Zamanında teslimat</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="iletisim" class="py-5">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold">İletişim</h2>
+        </div>
+
+        <div class="row g-0 contact-card mx-0">
+            <div class="col-lg-5 p-4 p-lg-5">
+                <h4 class="fw-bold mb-4" style="color: #198754;">Bize Ulaşın</h4>
+
+                <div class="d-flex flex-column gap-4">
+                    <div class="contact-item">
+                        <span class="icon-circle"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div>
+                            <small class="text-muted d-block">Adres</small>
+                            <strong>Şiran, Gümüşhane / Türkiye</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span>
+                        <div>
+                            <small class="text-muted d-block">Telefon</small>
+                            <a href="tel:+905327241129" class="text-decoration-none text-dark"><strong>+90 532 724 11 29</strong></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon-circle"><i class="bi bi-envelope-at-fill"></i></span>
+                        <div>
+                            <small class="text-muted d-block">E-posta</small>
+                            <a href="mailto:karacakerestepalet29@hotmail.com" class="text-decoration-none text-dark"><strong>karacakerestepalet29@hotmail.com</strong></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <h6 class="fw-bold mb-3">Bizi Takip Edin</h6>
+                <div class="d-flex gap-2">
+                    <a href="https://wa.me/905327241129" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <!-- INSTAGRAM: aşağıdaki # yerine hesap adresini yaz, örn. https://www.instagram.com/hesapadi -->
+                    <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <!-- FACEBOOK: aşağıdaki # yerine sayfa adresini yaz, örn. https://www.facebook.com/sayfaadi -->
+                    <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="h-100" style="min-height: 420px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.353328407421!2d39.1245!3d40.1878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406ff377e8a94665%3A0xc3f8e658390772e!2zxZxpcmFuLCBHw7Ztw7zFn2hhbmU!5e0!3m2!1str!2str!4v1712850000000!5m2!1str!2str"
+                    style="border:0; width:100%; height:100%; min-height:420px; display:block;" allowfullscreen="" loading="lazy" title="Karaca Palet konumu"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer pt-5">
+    <div class="container">
+        <div class="row g-4 pb-4">
+            <div class="col-md-5">
+                <h5 class="fw-bold text-white mb-3">Karaca Palet</h5>
+                <p class="mb-0">Kaliteli ve Dayanıklı Palet Çözümleri</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h6 class="fw-bold text-white mb-3">Sayfalar</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#">Ana Sayfa</a></li>
+                    <li class="mb-2"><a href="#kurumsal">Hakkımızda</a></li>
+                    <li class="mb-2"><a href="#hizmetler">Ürünler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h6 class="fw-bold text-white mb-3">İletişim</h6>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+905327241129">+90 532 724 11 29</a></li>
+                    <li class="mb-2"><i class="bi bi-envelope-at-fill me-2"></i><a href="mailto:karacakerestepalet29@hotmail.com" class="text-break">karacakerestepalet29@hotmail.com</a></li>
+                    <li><i class="bi bi-geo-alt-fill me-2"></i>Şiran, Gümüşhane</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-3">© 2026 Karaca Palet | Şiran, Gümüşhane</div>
+    </div>
+</footer>
+
+<a href="https://wa.me/905327241129" 
+   target="_blank" 
+   class="btn btn-success d-flex align-items-center shadow-lg" 
+   style="position: fixed; bottom: 30px; right: 30px; height: 55px; padding: 0 20px; border-radius: 30px; z-index: 9999; font-weight: 600; gap: 8px; width: auto;">
+    <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+    <span style="white-space: nowrap;">WhatsApp'tan Sorun</span>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function () {
+    var style = document.createElement('style');
+    style.textContent =
+        '#fotoOverlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.85);z-index:10000;display:none;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}' +
+        '#fotoOverlay.acik{display:flex}' +
+        '#fotoOverlay img{max-width:100%;max-height:90vh;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,.5)}' +
+        '#fotoOverlay button{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:36px;line-height:1;cursor:pointer}';
+    document.head.appendChild(style);
+
+    var overlay = document.createElement('div');
+    overlay.id = 'fotoOverlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-label', 'Fotoğraf büyük görünüm');
+    overlay.innerHTML = '<button type="button" aria-label="Kapat">&times;</button><img alt="">';
+    document.body.appendChild(overlay);
+    var big = overlay.querySelector('img');
+
+    function kapat() {
+        overlay.classList.remove('acik');
+        big.removeAttribute('src');
+    }
+
+    document.addEventListener('click', function (e) {
+        var img = e.target.closest ? e.target.closest('.feature-card img') : null;
+        if (img) {
+            big.src = img.currentSrc || img.src;
+            big.alt = img.alt;
+            overlay.classList.add('acik');
+        }
+    });
+    overlay.addEventListener('click', kapat);
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') kapat();
+    });
+})();
+</script>
+</body>
+</html>
